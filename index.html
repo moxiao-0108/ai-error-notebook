@@ -38,8 +38,8 @@
   <script>
     // 初始化Supabase客户端
     const supabase = createClient(
-      'YOUR_SUPABASE_URL', // 替换为你的Supabase项目URL
-      'YOUR_SUPABASE_KEY'  // 替换为你的Supabase API Key
+      'https://quhgfbajtdnnloswzbgs.supabase.co', // 替换为你的Supabase项目URL
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF1aGdmYmFqdGRubmxvc3d6YmdzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE4ODczMTYsImV4cCI6MjA1NzQ2MzMxNn0.YKOGWK0IyXVoljWsfrv08EBf3GwnNoRR9kr8VOb6KUE'  // 替换为你的Supabase API Key
     )
 
     // 图片上传事件
@@ -72,7 +72,7 @@
         const response = await fetch('https://api.deepseek.com/v1/vision', {
           method: 'POST',
           headers: {
-            'Authorization': `Bearer YOUR_DEEPSEEK_API_KEY`, // 替换为你的API Key
+            'Authorization': `sk-voehcwxubqskxkzneiszjvxszrnmthswlmmpukniftmrenro`, // 替换为你的API Key
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
